@@ -1,0 +1,22 @@
+{
+  "presets": [["@babel/preset-env", {
+    "targets": {
+      "node": 8,
+      "browsers": [
+        "ie 9",
+        "ios 9",
+        "last 2 chrome versions",
+        "last 2 edge versions",
+        "last 2 firefox versions"
+      ]
+    }
+  }]],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-transform-flow-strip-types",
+    "@babel/plugin-proposal-object-rest-spread",
+    ["@babel/plugin-transform-classes", {"loose": true}],
+    ["@babel/plugin-transform-destructuring", {"loose": true}],
+    ["@babel/plugin-transform-spread", {"loose": true}]
+  ]
+}
